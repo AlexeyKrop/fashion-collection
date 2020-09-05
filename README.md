@@ -1,1 +1,3 @@
 # fashion-collection
+
+Дипломный проект
