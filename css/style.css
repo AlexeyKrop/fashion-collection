@@ -44,6 +44,12 @@ li {
   list-style-type: none;
 }
 
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -403,6 +409,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   padding: 34px 74px;
+  margin-bottom: 36px;
 }
 
 .navbar-menu__list {
@@ -446,15 +453,49 @@ template {
   color: #1565D8;
 }
 
+.navbar-menu__btn {
+  display: none;
+}
+
 .hero-info {
+  padding: 62px 46px;
   background-image: url("../img/hero-image.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
 }
 
-.hero-info__lable {
-  background-color: #36B37E;
-  opacity: 0.1;
+.hero-info__sign {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #183B56;
+}
+
+.hero-info__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 652px;
+  width: 100%;
+  min-height: 400px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 52px;
+}
+
+.hero-info__label {
+  background-color: rgba(54, 179, 126, 0.1);
   border-radius: 2000px;
   padding: 6px 16px;
   font-family: Open Sans;
@@ -463,5 +504,198 @@ template {
   font-size: 14px;
   line-height: 20px;
   color: #36B37E;
+  text-transform: uppercase;
+}
+
+.hero-info__subtitle {
+  margin: 0;
+  font-family: HK Grotesk, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 68px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+}
+
+.hero-info__text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+}
+
+.hero-info__button {
+  padding: 16px 24px;
+  margin-bottom: 48px;
+  background: #183B56;
+  border-radius: 8px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.hero-info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding-left: 0;
+}
+
+.hero-info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.hero-info__image {
+  margin-right: 8px;
+}
+
+@media (max-width: 992px) {
+  .navbar-menu {
+    padding: 34px 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 728px;
+    width: 100%;
+  }
+  .navbar-menu__list {
+    display: none;
+  }
+  .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-color: transparent;
+    margin-right: 9px;
+  }
+  .menu-button__line {
+    width: 22px;
+    height: 2px;
+    background-color: #3A4C66;
+  }
+  .hero-info {
+    padding: 36px 28px;
+    background-image: url("../img/tablet-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .hero-info__label {
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  .hero-info__title {
+    max-width: 407px;
+    width: 100%;
+    min-height: 384px;
+    margin-bottom: 38px;
+  }
+  .hero-info__subtitle {
+    font-size: 44px;
+    line-height: 60px;
+  }
+  .hero-info__text {
+    margin: 0px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .hero-info__button {
+    max-width: 233px;
+    width: 100%;
+    min-height: 56px;
+    margin-bottom: 36px;
+  }
+  .hero-info__item {
+    margin-right: 25px;
+  }
+  .hero-info__image {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 320px;
+  }
+  .navbar-menu {
+    padding-left: 32px;
+    padding-right: 5px;
+    margin-bottom: 0px;
+  }
+  .hero-info {
+    padding-left: 24px;
+    padding-right: 24px;
+    background-image: url("../img/mobile-image.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 899px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-info__subtitle {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .hero-info__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-info__label {
+    padding: 2px 26px;
+    margin-bottom: 20px;
+  }
+  .hero-info__text {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
