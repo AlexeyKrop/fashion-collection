@@ -652,8 +652,7 @@ template {
     margin-bottom: 0px;
   }
   .hero-info {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 0px 24px;
     background-image: url("../img/mobile-image.png");
     background-repeat: no-repeat;
     background-position: 50% 0%;
@@ -675,8 +674,10 @@ template {
   .hero-info__subtitle {
     font-size: 32px;
     line-height: 40px;
+    letter-spacing: -1px;
   }
   .hero-info__title {
+    padding-top: 55px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -687,12 +688,14 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 24px;
   }
   .hero-info__label {
     padding: 2px 26px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .hero-info__text {
+    width: 280px;
     font-size: 16px;
     line-height: 28px;
     text-align: center;
@@ -707,6 +710,34 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .hero-info__button {
+    padding: 13px 24px;
+    font-size: 16px;
+    line-height: 22px;
+    min-height: 48p;
+    margin-bottom: 24px;
+  }
+  .hero-info__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-info__item {
+    margin: 0px 0px 18px 0px;
+  }
+  .hero-info__image {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  .hero-info__sign {
+    margin-right: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
