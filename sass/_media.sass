@@ -73,11 +73,32 @@
   .card
     margin-right: 8px
   .collection
+    margin-bottom: 80px
     &-info
       padding-top: 0px
       max-width: 680px
       &__text
-        margin-bottom: 25px            
+        margin-bottom: 25px
+  .trending
+    &-wrap
+      max-width: 608px
+    &-info
+      &__text
+        flex-direction: column
+      &__title
+        margin-bottom: 28px  
+      &__list
+        margin: 0px 0px 10px 0px
+        padding-left: 0px
+        max-width: 366px
+    &__image
+      width: 280px
+      height: 350px
+      margin-bottom: 16px
+    &__price
+      padding-left: 6px
+      padding-right: 14px      
+                    
 @media (max-width:576px)
   .container
     max-width: 320px      
@@ -150,6 +171,7 @@
           margin-right: 0px  
   .collection
     padding-top: 64px
+    margin-bottom: 65px
     &-card
       flex-direction: inherit
       width: inherit
@@ -185,6 +207,44 @@
     &__image
       width: 138px
       height: 97px
+  .trending
+    &-wrapper
+      max-width: 290px
+      margin: auto  
+    &-info
+      margin-bottom: 25px
+      &__title
+        font-size: 28px
+        line-height: 36px
+        letter-spacing: 0px
+        margin-bottom: 24px
+      &__link
+        font-size: 16px
+        line-height: 22px
+        &_n
+          font-size: 16px
+          line-height: 22px
+      &__list
+        max-width: 290px 
+    &__image
+      width: 140px
+      height: 170px
+      margin-bottom: 10px
+    &__description
+      font-size: 16px
+      line-height: 20px
+    &__price
+      justify-content: end
+      &-pricetag
+        font-size: 14px
+        line-height: 24px
+      &-icon
+        width: 14px       
+    &__card
+      min-height: 230px
+      margin-bottom: 23px
+          
+
 
                
 
