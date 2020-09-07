@@ -409,7 +409,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   padding: 34px 67px;
-  margin-bottom: 36px;
+  margin-bottom: 11px;
 }
 
 .navbar-menu__list {
@@ -458,12 +458,13 @@ template {
 }
 
 .hero-info {
-  padding: 62px 107px;
+  padding: 62px 107px 43px 107px;
   border-radius: 5px;
   background-image: url("../img/hero-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  margin-bottom: 120px;
 }
 
 .hero-info__block {
@@ -524,6 +525,10 @@ template {
   color: #183B56;
 }
 
+.hero-info__subtitle_c, .hero-info__subtitle_f {
+  letter-spacing: -2.8px;
+}
+
 .hero-info__description {
   max-width: 580px;
   width: 100%;
@@ -582,6 +587,94 @@ template {
 .wrapper {
   max-width: 1140px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 667px;
+  width: 100%;
+}
+
+.wrapper-image {
+  max-width: 320px;
+  height: 230px;
+}
+
+.collection-info {
+  max-width: 412px;
+  padding-top: 10px;
+}
+
+.collection-info__title {
+  margin: 0px 0px 24px 0px;
+  font-family: HK Grotesk, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #183B56;
+  letter-spacing: -1px;
+}
+
+.collection-info__text {
+  margin: 0px 20px 40px 0px;
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+}
+
+.collection-info__link {
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #1565D8;
+  letter-spacing: 0.7px;
+  margin-right: 20px;
+}
+
+.collection-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.collection-card__image {
+  max-width: 320px;
+  height: 490px;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 @media (max-width: 992px) {
@@ -594,6 +687,9 @@ template {
   .container {
     max-width: 728px;
     width: 100%;
+  }
+  .navbar-menu {
+    margin-bottom: 15px;
   }
   .navbar-menu__list {
     display: none;
@@ -622,11 +718,12 @@ template {
     background-color: #3A4C66;
   }
   .hero-info {
-    padding: 36px 28px;
+    padding: 35px 28px;
     background-image: url("../img/tablet-image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    margin-bottom: 80px;
   }
   .hero-info__label {
     margin-top: 0px;
@@ -663,6 +760,25 @@ template {
   .hero-info__image {
     margin-right: 5px;
   }
+  .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper-card {
+    max-width: 680px;
+    margin-bottom: 40px;
+  }
+  .card {
+    margin-right: 8px;
+  }
+  .collection-info {
+    padding-top: 0px;
+    max-width: 680px;
+  }
+  .collection-info__text {
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -670,15 +786,17 @@ template {
     max-width: 320px;
   }
   .navbar-menu {
-    padding-left: 32px;
-    padding-right: 5px;
+    padding-left: 23px;
+    padding-right: 15px;
     margin-bottom: 0px;
+    padding-bottom: 42px;
+    padding-top: 40px;
   }
   .hero-info {
-    padding: 0px 24px 24px 18px;
+    margin-bottom: 0px;
+    padding: 0px 0px 18px 0px;
     background-image: url("../img/mobile-image.png");
     background-repeat: no-repeat;
-    background-position: 50% 0%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -686,7 +804,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 914px;
+    min-height: 899px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -700,7 +818,7 @@ template {
     letter-spacing: -1px;
   }
   .hero-info__title {
-    padding-top: 80px;
+    padding-top: 48px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -711,11 +829,11 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
   }
   .hero-info__label {
     padding: 2px 26px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   .hero-info__text {
     width: 280px;
@@ -733,6 +851,11 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 0px;
+  }
+  .hero-info__description {
+    width: auto;
+    margin-bottom: 12px;
   }
   .hero-info__button {
     padding: 13px 24px;
@@ -761,6 +884,62 @@ template {
   }
   .hero-info__sign {
     margin-right: 16px;
+  }
+  .hero-info__sign_g {
+    margin-right: 0px;
+  }
+  .collection {
+    padding-top: 64px;
+  }
+  .collection-card {
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+    width: inherit;
+    margin-bottom: 14px;
+  }
+  .collection-card__image {
+    width: 290px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .collection-info {
+    text-align: center;
+  }
+  .collection-info__title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+  }
+  .collection-info__text {
+    font-size: 16px;
+    line-height: 28px;
+    margin-right: 0px;
+    width: 280px;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  .collection-info__link {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .wrapper-card {
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 23px;
+  }
+  .card {
+    margin-right: 0px;
+  }
+  .card__image {
+    width: 138px;
+    height: 97px;
   }
 }
 /*# sourceMappingURL=style.css.map */

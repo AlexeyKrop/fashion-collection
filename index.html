@@ -84,7 +84,7 @@
             </li>
             <li class="hero-info__item">
               <img src="./img/Icon-V.png" alt="icon" class="hero-info__image" />
-              <span class="hero-info__sign">Guarantee</span>
+              <span class="hero-info__sign hero-info__sign_g">Guarantee</span>
             </li>
             <li class="hero-info__item">
               <img
@@ -104,19 +104,22 @@
     <section class="collection">
       <div class="container">
         <div class="wrapper">
-          <div class="collection-card">
-            <img
-              src="./img/Base.png"
-              alt="main image"
-              class="collection-card__image"
-            />
+          <div class="wrapper-card">
+            <div class="collection-card">
+              <img
+                src="./img/Base.png"
+                alt="main image"
+                class="collection-card__image"
+              />
+            </div>
+            <!-- /.collection-card -->
+            <div class="collection-card card">
+              <img src="./img/chair.png" alt="chair" class="card__image" />
+              <img src="./img/room.png" alt="room" class="card__image" />
+            </div>
+            <!-- /. collection-card -->
           </div>
-          <!-- /.collection-card -->
-          <div class="collection-card card">
-            <img src="./img/chair.png" alt="chair" class="card__image" />
-            <img src="./img/room.png" alt="room" class="card__image" />
-          </div>
-          <!-- /. collection-card -->
+          <!-- /.collection-card__wrapper -->
           <div class="collection-info">
             <h2 class="collection-info__title">New Winter Collection</h2>
             <p class="collection-info__text">
@@ -125,7 +128,15 @@
               by click See More button on below. Let’s buy Our Collection before
               all they’re gone. Use EHYA20 to get 20% Disc.
             </p>
-            <a href="#" class="collection-info__link">Check Our Collection</a>
+            <div class="collection-info__item">
+              <a href="#" class="collection-info__link">Check Our Collection</a>
+              <img
+                src="./img/collection-icon.png"
+                alt="icon"
+                class="collection-info__image"
+              />
+            </div>
+            <!-- /.collection-info__item -->
           </div>
           <!-- /.collection-info -->
         </div>

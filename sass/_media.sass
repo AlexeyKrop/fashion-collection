@@ -1,3 +1,8 @@
+@media (max-width: 1100px)
+  .wrapper
+    flex-wrap: wrap
+    justify-content: flex-start
+  
 @media (max-width: 992px)
   .navbar
     &-menu
@@ -8,6 +13,7 @@
     width: 100%
   .navbar
     &-menu
+      margin-bottom: 15px
       &__list
         display: none
   .menu
@@ -26,11 +32,12 @@
         background-color: #3A4C66
   .hero
     &-info
-      padding: 36px 28px
+      padding: 35px 28px
       background-image: url('../img/tablet-image.png')
       background-repeat: no-repeat
       background-size: cover
       background-position: 50% 50%
+      margin-bottom: 80px
       &__label
         margin-top: 0px
         margin-bottom: 24px
@@ -58,23 +65,38 @@
         margin-right: 25px
       &__image
         margin-right: 5px
+  .wrapper
+    justify-content: center
+    &-card
+      max-width: 680px
+      margin-bottom: 40px
+  .card
+    margin-right: 8px
+  .collection
+    &-info
+      padding-top: 0px
+      max-width: 680px
+      &__text
+        margin-bottom: 25px            
 @media (max-width:576px)
   .container
-    max-width: 320px
+    max-width: 320px      
   .navbar
     &-menu
-      padding-left: 32px
-      padding-right: 5px
+      padding-left: 23px
+      padding-right: 15px
       margin-bottom: 0px
+      padding-bottom: 42px
+      padding-top: 40px
   .hero
     &-info
-      padding: 0px 24px 24px 18px
+      margin-bottom: 0px
+      padding: 0px 0px 18px 0px
       background-image: url('../img/mobile-image.png')
-      background-repeat: no-repeat
-      background-position: 50% 0%
+      background-repeat: no-repeat      
       display: flex
       flex-direction: column
-      min-height: 914px
+      min-height: 899px
       justify-content: flex-end
       align-items: center         
       &__subtitle
@@ -82,30 +104,36 @@
         line-height: 40px
         letter-spacing: -1px
       &__title
-        padding-top: 80px
+        padding-top: 48px
         display: flex
         flex-direction: column
         align-items: center
-        margin-bottom: 24px
+        margin-bottom: 0px
       &__label
         padding: 2px 26px
-        margin-bottom: 20px
+        margin-bottom: 0px
+        
       &__text
         width: 280px
         font-size: 16px
         line-height: 28px
-        text-align: center
+        text-align: center     
       &__block
         display: flex
         flex-wrap: wrap
         width: 295px
         justify-content: center
+        margin-bottom: 0px
+      &__description
+        width: auto
+        margin-bottom: 12px  
       &__button
         padding: 13px 24px
         font-size: 16px
         line-height: 22px
         min-height: 48p
         margin-bottom: 24px
+        
       &__list
         display: flex
         flex-wrap: wrap
@@ -117,8 +145,46 @@
         height: 24px
         margin-right: 8px
       &__sign
-        margin-right: 16px  
-              
+        margin-right: 16px
+        &_g
+          margin-right: 0px  
+  .collection
+    padding-top: 64px
+    &-card
+      flex-direction: inherit
+      width: inherit
+      margin-bottom: 14px
+      &__image
+        width: 290px
+        height: 300px
+        object-fit: cover
+    &-info
+      text-align: center
+      &__title
+        font-size: 28px
+        line-height: 36px
+        letter-spacing: 0px
+        margin-bottom: 15px
+      &__text
+        font-size: 16px
+        line-height: 28px
+        margin-right: 0px
+        width: 280px
+        margin: auto
+        margin-bottom: 25px
+      &__link
+        font-size: 16px
+        line-height: 22px    
+  .wrapper
+    &-card
+      max-width: min-content
+      flex-wrap: wrap
+      margin-bottom: 23px     
+  .card
+    margin-right: 0px
+    &__image
+      width: 138px
+      height: 97px
 
                
 
