@@ -2,11 +2,37 @@
   .wrapper
     flex-wrap: wrap
     justify-content: flex-start
-  
+@media (max-width: 1078px)
+  .wrapper
+    &-card
+      margin: auto
+  .collection
+    &-info
+      margin: auto
+      max-width: 660px
+@media (max-width: 1065px)
+  .stories
+    &-wrapper
+      justify-content: center
+    &-about
+      max-width: 100%  
+      text-align: center
+      margin-bottom: 128px
+      &__title
+        text-align: center
+        max-width: inherit
+        margin-right: 0px 
+  .slick
+    &-next
+      top: 35%
+      left: 40%
+    &-prev
+      top: 35%
+      left: 50%                   
 @media (max-width: 992px)
   .navbar
     &-menu
-      padding: 34px 34px
+      padding: 34px 34px   
 @media (max-width: 768px)
   .container
     max-width: 728px
@@ -32,7 +58,7 @@
         background-color: #3A4C66
   .hero
     &-info
-      padding: 35px 28px
+      padding: 28px 28px
       background-image: url('../img/tablet-image.png')
       background-repeat: no-repeat
       background-size: cover
@@ -60,7 +86,7 @@
         max-width: 233px
         width: 100%
         min-height: 56px
-        margin-bottom: 36px
+        margin-bottom: 36p
       &__item
         margin-right: 25px
       &__image
@@ -71,17 +97,20 @@
       max-width: 680px
       margin-bottom: 40px
   .card
-    margin-right: 8px
+    margin-right: 8px 
   .collection
     margin-bottom: 80px
     &-info
       padding-top: 0px
       max-width: 680px
       &__text
-        margin-bottom: 25px
+        margin-bottom: 25px          
   .trending
+    margin-bottom: 40px
     &-wrap
       max-width: 608px
+    &-wrapper
+      justify-content: space-between   
     &-info
       &__text
         flex-direction: column
@@ -97,9 +126,71 @@
       margin-bottom: 16px
     &__price
       padding-left: 6px
-      padding-right: 14px      
-                    
-@media (max-width:576px)
+      padding-right: 14px
+  .slider
+    max-width: 680px
+    width: 100%
+  .testomonial
+    &__icon
+      margin-bottom: 18px
+    &__text
+      max-width: 630px
+      letter-spacing: 0px
+      margin-bottom: 40px
+    &__description
+      letter-spacing: -0.8px
+      margin-bottom: 23px
+  .slick
+    &-dots
+      margin: 0px
+      padding-left: 0px
+    &-next
+      top: 36%
+      left: 41%
+    &-prev
+      top: 36%
+      left: 51%    
+  .stories
+    &-wrapper
+      padding-top: 105px
+    &-about
+      &__title
+        margin-bottom: 18px
+      &__text
+        max-width: 510px
+    &-slider
+      &__wrapper
+        justify-content: space-between
+        flex-wrap: wrap    
+@media (max-width:650px)
+  .wrapper
+    &-card
+      flex-wrap: wrap
+      justify-content: center
+  .collection
+    &-card
+      &__image
+        margin-bottom: 20px
+  .card
+    &__image
+      margin-bottom: 20px
+  .trending
+    &-wrapper
+      max-width: 550px
+      justify-content: center
+@media (max-width:636px)
+  .stories
+    &-slider
+      &__wrapper
+        justify-content: center
+  .slick
+    &-next
+      top: 25%
+      left: 30% 
+    &-prev
+      top: 25%
+      left: 60%         
+@media (max-width:320px)
   .container
     max-width: 320px      
   .navbar
@@ -152,9 +243,8 @@
         padding: 13px 24px
         font-size: 16px
         line-height: 22px
-        min-height: 48p
-        margin-bottom: 24px
-        
+        min-height: 48px
+        margin-bottom: 24px       
       &__list
         display: flex
         flex-wrap: wrap
@@ -165,6 +255,7 @@
         width: 24px
         height: 24px
         margin-right: 8px
+        margin-bottom: 0px
       &__sign
         margin-right: 16px
         &_g
@@ -180,6 +271,7 @@
         width: 290px
         height: 300px
         object-fit: cover
+        margin-bottom: 0px
     &-info
       text-align: center
       &__title
@@ -201,7 +293,7 @@
     &-card
       max-width: min-content
       flex-wrap: wrap
-      margin-bottom: 23px     
+      margin-bottom: 5px     
   .card
     margin-right: 0px
     &__image
@@ -210,7 +302,8 @@
   .trending
     &-wrapper
       max-width: 290px
-      margin: auto  
+      margin: auto
+      justify-content: space-between  
     &-info
       margin-bottom: 25px
       &__title
@@ -231,19 +324,66 @@
       height: 170px
       margin-bottom: 10px
     &__description
+      padding-left: 0px
       font-size: 16px
       line-height: 20px
     &__price
+      padding-left: 0px
       justify-content: end
       &-pricetag
         font-size: 14px
         line-height: 24px
+        margin-right: 5px
       &-icon
         width: 14px       
     &__card
       min-height: 230px
       margin-bottom: 23px
-          
+  .testomonial
+    &__text
+      max-width: 282px
+      font-size: 18px
+      line-height: 36px
+      letter-spacing: 0.2px
+      margin-bottom: 20px
+    &__description
+      max-width: 161px
+      margin-bottom: 12px
+  .slider
+    &-dots
+      padding-left: 10px
+  .stories
+    &-wrapper
+      padding-top: 55px
+    &-about
+      max-width: 280px
+      margin-bottom: 104px
+      &__title
+        font-size: 28px
+        line-height: 36px
+      &__text
+        font-size: 16px
+        line-height: 28px
+    &-slider
+      &__image
+        width: 27
+    &-wrap
+      width: 270px
+    &-info
+      &__text
+        font-size: 20px
+        line-height: 24px
+      &_t
+        padding: 28px 4px 20px 17px       
+  .slick
+    &-arrow
+      width: 55px
+    &-next
+      top: 21%
+    &-prev
+      top: 21%
+      left: 51%
+              
 
 
                
