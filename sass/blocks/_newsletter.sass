@@ -5,32 +5,43 @@
   bottom: 0
   left: 0
   right: 0
+  z-index: 
   background-color: #1565D8
   &::before
     content: ''
     position: absolute
     top: 0
     left: 0
-    right: 
+    right: 0
     bottom: 0
     width: 100%
     height: 100%
     background-image: url('../img/Oval.png')
     background-repeat: no-repeat
-.newsletter
   &::after
     content: ''
     position: absolute
     background-image: url('../img/Oval-right.png')
-    z-index: 10
-    right: 0
+    background-repeat: no-repeat
+    background-position: 100% 50%
+    z-index: 
+    width: 100%
+    height: 100%
     top: 0
+    right: 0
   &-wrapper
     max-width: 1080px
+    width: 100%
     position: relative
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
+    z-index: 99
   &-subscribe
     max-width: 486px
     &__title

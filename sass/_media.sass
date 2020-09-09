@@ -1,7 +1,15 @@
+@media (max-width: 1132px)
+  .newsletter-wrapper
+    min-height: 310px
+    justify-content: center 
 @media (max-width: 1100px)
   .wrapper
     flex-wrap: wrap
     justify-content: flex-start
+  .footer
+    &-container
+      max-width: 860px
+      margin: auto  
 @media (max-width: 1078px)
   .wrapper
     &-card
@@ -32,8 +40,13 @@
 @media (max-width: 992px)
   .navbar
     &-menu
-      padding: 34px 34px   
+      padding: 34px 34px
+  .footer
+    &-container
+      max-width: 800px       
 @media (max-width: 768px)
+  body
+    padding-top: 105px
   .container
     max-width: 728px
     width: 100%
@@ -42,6 +55,38 @@
       margin-bottom: 15px
       &__list
         display: none
+        &_visited
+          position: fixed
+          top: 18px
+          left: 10px
+          bottom: 0
+          right: 0
+          z-index: 9
+          width: 304px
+          min-height: 270px
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          align-items: start
+          background-color: white
+          padding-bottom: 50px
+      &__button
+        &_hidden
+          width: 250px    
+      &__item
+        &_hidden
+          display: block
+          margin-left: 87%
+        &_mobile
+          margin-bottom: 20px
+    &__mobile
+      &_fixed
+        position: fixed
+        top: -5px
+        left: 0
+        bottom: 0
+        right: 0
+        z-index: 100   
   .menu
     &-button
       display: flex
@@ -151,6 +196,7 @@
       top: 36%
       left: 51%    
   .stories
+    margin-bottom: 58px
     &-wrapper
       padding-top: 105px
     &-about
@@ -161,7 +207,26 @@
     &-slider
       &__wrapper
         justify-content: space-between
-        flex-wrap: wrap    
+        flex-wrap: wrap
+  .newsletter
+    padding-top: 44px
+    padding-bottom: 50px
+    &-subscribe
+      text-align: center
+  .footer
+    padding-top: 60px
+    &-container
+      max-width: 654px
+    &-info
+      margin-right: 20px  
+    &-about
+      max-width: 330px
+      min-height: 570px
+      &__list
+        &_m
+          margin-right: 24px
+    &-wrapper
+      margin-bottom: 16px          
 @media (max-width:650px)
   .wrapper
     &-card
@@ -178,6 +243,9 @@
     &-wrapper
       max-width: 550px
       justify-content: center
+  .footer
+    &-container
+      max-width: 550px    
 @media (max-width:636px)
   .stories
     &-slider
@@ -189,7 +257,26 @@
       left: 30% 
     &-prev
       top: 25%
-      left: 60%         
+      left: 60%
+@media (max-width:577px)
+  .newsletter
+    padding-left: 0px
+    padding-right: 0px
+    &-form
+      &__button
+        width: 100%
+        top: 70px
+  .form
+    width: 92%
+  .footer
+    &-container
+      max-width: 90%
+    &-wrapper
+      flex-wrap: wrap
+      justify-content: center
+    &-info
+      order: 1
+      margin-right: 0          
 @media (max-width:320px)
   .container
     max-width: 320px      
@@ -353,6 +440,7 @@
     &-dots
       padding-left: 10px
   .stories
+    margin-bottom: 35px
     &-wrapper
       padding-top: 55px
     &-about
@@ -383,6 +471,61 @@
     &-prev
       top: 21%
       left: 51%
+  .newsletter
+    padding-top: 45px
+    padding-bottom: 94px
+    &-form
+      &__button
+        top: 60px
+        width: 98%
+      &__input
+        min-height: 50px
+        width: 98%
+        padding-left: 56px
+        font-size: 17px
+      &__icon
+        top: 36%
+        left: 9%         
+    &-wrapper
+      min-height: 275px
+    &-subscribe
+      &__title
+        font-size: 28px
+        letter-spacing: 0px
+        line-height: 36px
+        margin-bottom: 24px
+      &__subtitle
+        font-size: 16px
+        line-height: 28px
+        word-spacing: 2px
+  .footer
+    padding-top: 46px
+    &-information
+      display: none
+    &-about
+      min-height: 452px
+      &__link
+        font-size: 14px
+        line-height: 20px
+        &_h
+          font-size: 16px
+          line-height: 22px
+          margin-bottom: 24px
+      &__item
+        margin-bottom: 14px
+        &_h
+          margin-bottom: 24px
+      &__list
+        margin-left: 8px
+        &_s
+          margin-right: 33px
+    &-info
+      min-height: 160px
+      justify-content: center
+      text-align: center
+      &__text
+        font-size: 14px
+        line-height: 24px    
               
 
 
