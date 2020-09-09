@@ -380,7 +380,7 @@
             <div class="stories-slider__wrapper">
               <div class="stories-wrap">
                 <img
-                  src="./img/slider-image.png"
+                  data-lazy="./img/slider-image.png"
                   alt="slider:image"
                   class="stories-slider__image"
                 />
@@ -394,7 +394,7 @@
               </div>
               <div class="stories-wrap">
                 <img
-                  src="./img/Slider.png"
+                  data-lazy="./img/Slider.png"
                   alt="slider:image"
                   class="stories-slider__image"
                 />
@@ -415,7 +415,7 @@
             <div class="stories-slider__wrapper">
               <div class="stories-wrap">
                 <img
-                  src="./img/slider-image.png"
+                  data-lazy="./img/slider-image.png"
                   alt="slider:image"
                   class="stories-slider__image"
                 />
@@ -429,7 +429,7 @@
               </div>
               <div class="stories-wrap">
                 <img
-                  src="./img/Slider.png"
+                  data-lazy="./img/Slider.png"
                   alt="slider:image"
                   class="stories-slider__image"
                 />
@@ -453,6 +453,35 @@
       <!-- /.stories-wrapper -->
     </section>
     <!-- /.stories -->
+    <section class="newsletter">
+      <div class="newsletter-wrapper">
+        <div class="newsletter-subscribe">
+          <h2 class="newsletter-subscribe__title">Join Our Newsletter</h2>
+          <span class="newsletter-subscribe__subtitle"
+            >Just insert your email into the field below. And you will get the
+            updates about fashion & styles from us.</span
+          >
+        </div>
+        <!-- /.newsletter-subscribe -->
+        <form action="send.php" method="POST" class="newsletter-form form">
+          <img
+            src="./img/Icon-newletter.png"
+            alt="newsletter-icon"
+            class="newsletter-form__icon"
+          />
+          <input
+            type="email"
+            class="input newsletter-form__input"
+            placeholder="Your email"
+            name="email"
+            required
+          />
+          <button class="newsletter-form__button">Subscribe</button>
+        </form>
+      </div>
+      <!-- /.newsletter-wrapper -->
+    </section>
+    <!-- /.newsletter -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
