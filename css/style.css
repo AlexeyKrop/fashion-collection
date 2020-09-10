@@ -457,6 +457,7 @@ template {
           align-items: center;
   padding: 34px 67px;
   margin-bottom: 11px;
+  background-color: white;
 }
 
 .navbar-menu__list {
@@ -1505,7 +1506,7 @@ template {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 100;
+    z-index: 1;
   }
   .menu-button {
     display: -webkit-box;
@@ -1729,7 +1730,7 @@ template {
   }
 }
 
-@media (max-width: 636px) {
+@media (max-width: 637px) {
   .stories-slider__wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
