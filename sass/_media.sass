@@ -57,12 +57,13 @@
         display: none
         &_visited
           position: fixed
-          top: 18px
-          left: 10px
+          top: 0
+          left: 0
           bottom: 0
           right: 0
           z-index: 9
-          width: 304px
+          max-width: none
+          width: 100%
           min-height: 270px
           display: flex
           flex-direction: column
@@ -534,6 +535,15 @@
       &__text
         font-size: 14px
         line-height: 24px
+  .modal
+    &__dialog
+      &_visible
+        max-width: 280px
+        width: 100%
+        padding: 0px
+    &__form
+      margin: auto
+      width: 90%        
 @media (max-width: 320px)
   .hero
     &-info
@@ -542,6 +552,25 @@
     &-form
       &__input
         padding-left: 56px
+  .modal
+    &__dialog
+      &_visible
+        max-width: 280px
+        width: 100%
+        padding: 0px
+    &__form
+      margin: auto
+      width: 90%
+  .navbar
+    &-menu
+      &__list
+        &_visited
+          top: 18px
+          left: 10px
+          bottom: 0
+          right: 0      
+          width: 304px
+          min-height: 270px            
               
               
 

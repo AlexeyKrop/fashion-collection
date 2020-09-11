@@ -52,3 +52,27 @@ $(document).ready(function () {
     $(this).addClass("trending-info__link_active");
   });
 });
+var modalButton = $("[data-toggle=modal]");
+var closeModalButton = $(".modal__close");
+modalButton.on("click", openModal);
+closeModalButton.on("click", closeModal);
+
+function openModal() {
+  var modalOverlay = $(".modal__overlay");
+  var modalDialog = $(".modal__dialog");
+  modalOverlay.addClass("modal__overlay_visible");
+  modalDialog.addClass("modal__dialog_visible");
+  $(document).keydown(function (e) {
+    if (e.keyCode === 27) {
+      closeModal(event);
+    }
+  });
+}
+
+function closeModal(event) {
+  event.preventDefault();
+  var modalOverlay = $(".modal__overlay");
+  var modalDialog = $(".modal__dialog");
+  modalOverlay.removeClass("modal__overlay_visible");
+  modalDialog.removeClass("modal__dialog_visible");
+}
