@@ -775,6 +775,10 @@ template {
   border-radius: 8px;
 }
 
+.trending__card_active {
+  display: none;
+}
+
 .trending__image {
   margin-bottom: 20px;
 }
@@ -831,9 +835,10 @@ template {
   line-height: 25px;
   color: #5A7184;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.trending-info__link_n {
+.trending-info__link_active {
   color: #183B56;
   font-weight: bold;
 }
@@ -1383,6 +1388,19 @@ template {
   margin-bottom: 21px;
 }
 
+.footer__link {
+  position: fixed;
+  bottom: 20%;
+  right: 10%;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.footer__image {
+  -webkit-box-shadow: 5px;
+          box-shadow: 5px;
+}
+
 @media (max-width: 1132px) {
   .newsletter-wrapper {
     min-height: 310px;
@@ -1504,9 +1522,8 @@ template {
     position: fixed;
     top: -5px;
     left: 0;
-    bottom: 0;
     right: 0;
-    z-index: 1;
+    z-index: 200;
   }
   .menu-button {
     display: -webkit-box;
@@ -1592,9 +1609,13 @@ template {
   .collection-info {
     padding-top: 0px;
     max-width: 680px;
+    text-align: center;
   }
   .collection-info__text {
     margin-bottom: 25px;
+  }
+  .collection-info__title {
+    text-align: start;
   }
   .trending {
     margin-bottom: 40px;
@@ -1747,6 +1768,10 @@ template {
 }
 
 @media (max-width: 577px) {
+  .hero-info__subtitle {
+    font-size: 32px;
+    line-height: 40px;
+  }
   .newsletter {
     padding-left: 0px;
     padding-right: 0px;
@@ -1776,9 +1801,9 @@ template {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   .container {
-    max-width: 320px;
+    max-width: 100%;
   }
   .navbar-menu {
     padding-left: 23px;
@@ -1790,7 +1815,7 @@ template {
   .hero-info {
     margin-bottom: 0px;
     padding: 0px 0px 18px 0px;
-    background-image: url("../img/mobile-image.png");
+    background-position: 85% 50%;
     background-repeat: no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2060,7 +2085,7 @@ template {
   .newsletter-form__input {
     min-height: 50px;
     width: 98%;
-    padding-left: 56px;
+    padding-left: 78px;
     font-size: 17px;
   }
   .newsletter-form__icon {
@@ -2121,6 +2146,15 @@ template {
   .footer-info__text {
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-info {
+    background-image: url("../img/mobile-image.png");
+  }
+  .newsletter-form__input {
+    padding-left: 56px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -84,9 +84,9 @@
         position: fixed
         top: -5px
         left: 0
-        bottom: 0
+        
         right: 0
-        z-index: 1 
+        z-index: 200 
   .menu
     &-button
       display: flex
@@ -148,8 +148,11 @@
     &-info
       padding-top: 0px
       max-width: 680px
+      text-align: center
       &__text
-        margin-bottom: 25px          
+        margin-bottom: 25px
+      &__title
+        text-align: start            
   .trending
     margin-bottom: 40px
     &-wrap
@@ -259,6 +262,11 @@
       top: 25%
       left: 60%
 @media (max-width:577px)
+  .hero
+    &-info
+      &__subtitle
+        font-size: 32px
+        line-height: 40px
   .newsletter
     padding-left: 0px
     padding-right: 0px
@@ -277,9 +285,9 @@
     &-info
       order: 1
       margin-right: 0          
-@media (max-width:320px)
+@media (max-width:576px)
   .container
-    max-width: 320px      
+    max-width: 100%      
   .navbar
     &-menu
       padding-left: 23px
@@ -291,7 +299,7 @@
     &-info
       margin-bottom: 0px
       padding: 0px 0px 18px 0px
-      background-image: url('../img/mobile-image.png')
+      background-position: 85% 50%
       background-repeat: no-repeat      
       display: flex
       flex-direction: column
@@ -481,7 +489,7 @@
       &__input
         min-height: 50px
         width: 98%
-        padding-left: 56px
+        padding-left: 78px
         font-size: 17px
       &__icon
         top: 36%
@@ -525,7 +533,16 @@
       text-align: center
       &__text
         font-size: 14px
-        line-height: 24px    
+        line-height: 24px
+@media (max-width: 320px)
+  .hero
+    &-info
+      background-image: url('../img/mobile-image.png')
+  .newsletter
+    &-form
+      &__input
+        padding-left: 56px
+              
               
 
 

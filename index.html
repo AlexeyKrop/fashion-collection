@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favicon.ico" />
     <title>Fachion-collection</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
@@ -162,16 +163,22 @@
             <div class="trending-info__text">
               <h2 class="trending-info__title">Trending Items</h2>
               <ul class="trending-info__list">
-                <li class="trending-info__items" tabindex="1">
-                  <a href="#" class="trending-info__link trending-info__link_n"
-                    >New Arrival</a
-                  >
+                <li
+                  class="trending-info__items trending-info__link trending-info__link_n"
+                >
+                  New Arrival
                 </li>
-                <li class="trending-info__items" tabindex="2">
-                  <a href="#" class="trending-info__link">Best Sellers</a>
+                <li
+                  class="trending-info__items trending-info__link"
+                  data-target="#best"
+                >
+                  Best Sellers
                 </li>
-                <li class="trending-info__items" tabindex="3">
-                  <a href="#" class="trending-info__link">Upcoming</a>
+                <li
+                  class="trending-info__items trending-info__link"
+                  data-target="#upcoming, #Arrival, #mask, #red"
+                >
+                  Upcoming
                 </li>
               </ul>
             </div>
@@ -197,7 +204,7 @@
               <!-- /.trending__price -->
             </div>
             <!-- /.trending-__card -->
-            <div class="trending__card">
+            <div class="trending__card" id="best">
               <img
                 src="./img/Luxure.png"
                 alt="second image"
@@ -215,7 +222,7 @@
               <!-- /.trending__price -->
             </div>
             <!-- /.trending-__card -->
-            <div class="trending__card">
+            <div class="trending__card" id="upcoming">
               <img
                 src="./img/Colorist.png"
                 alt="third image"
@@ -233,7 +240,7 @@
               <!-- /.trending__price -->
             </div>
             <!-- /.trending-__card -->
-            <div class="trending__card">
+            <div class="trending__card" id="Arrival">
               <img
                 src="./img/pinky.png"
                 alt="fourth image"
@@ -287,7 +294,7 @@
               <!-- /.trending__price -->
             </div>
             <!-- /.trending-__card -->
-            <div class="trending__card">
+            <div class="trending__card" id="red">
               <img
                 src="./img/red.png"
                 alt="seventh image"
@@ -305,7 +312,7 @@
               <!-- /.trending__price -->
             </div>
             <!-- /.trending-__card -->
-            <div class="trending__card">
+            <div class="trending__card" id="mask">
               <a href="#" class="trending__link"
                 ><img
                   src="./img/mask.png"
@@ -334,9 +341,9 @@
               pieces and the quality of the fabric is devine.... I look forward
               to seeing the new collections from season to season”
             </p>
-            <span class="testomonial__description"
-              >Alicia Puma - Fashun Customer</span
-            >
+            <h4 class="testomonial__description">
+              Alicia Puma - Fashun Customer
+            </h4>
           </div>
           <!-- /.slider__item -->
           <div class="slider__item">
@@ -390,7 +397,7 @@
             <div class="stories-slider__wrapper">
               <div class="stories-wrap">
                 <img
-                  data-lazy="./img/slider-image.png"
+                  src="./img/slider-image.png"
                   alt="slider:image"
                   class="stories-slider__image"
                 />
@@ -404,7 +411,7 @@
               </div>
               <div class="stories-wrap">
                 <img
-                  data-lazy="./img/Slider.png"
+                  src="./img/Slider.png"
                   alt="slider:image"
                   class="stories-slider__image"
                 />
@@ -425,7 +432,7 @@
             <div class="stories-slider__wrapper">
               <div class="stories-wrap">
                 <img
-                  data-lazy="./img/slider-image.png"
+                  src="./img/slider-image.png"
                   alt="slider:image"
                   class="stories-slider__image"
                 />
@@ -439,7 +446,7 @@
               </div>
               <div class="stories-wrap">
                 <img
-                  data-lazy="./img/Slider.png"
+                  src="./img/Slider.png"
                   alt="slider:image"
                   class="stories-slider__image"
                 />
@@ -623,7 +630,7 @@
         </div>
         <!-- /.footer-wrapper -->
         <div class="footer-information">
-          <a href="#" class="footer-information__link"
+          <a href="index.html" class="footer-information__link"
             ><img
               src="./img/Heart.png"
               alt="footer:icon"
@@ -633,6 +640,9 @@
             >Copyright © 2019. Crafted with love.</span
           >
         </div>
+        <a href="#" class="footer__link"
+          ><img src="./img/return.png" alt="return" class="footer__image"
+        /></a>
       </div>
       <!-- /.footer-container -->
     </footer>

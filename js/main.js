@@ -41,3 +41,14 @@ CloseMenuButton.addEventListener("click", function () {
     .querySelector(".navbar-menu__list")
     .classList.remove("navbar-menu__list_visited");
 });
+$(document).ready(function () {
+  var tabItem = $(".trending-info__link");
+  var content = $(".trending__card");
+  tabItem.on("click", function (event) {
+    var activeContent = $(this).attr("data-target");
+    $(tabItem).removeClass("trending-info__link_active");
+    $(content).removeClass("trending__card_active");
+    $(activeContent).addClass("trending__card_active");
+    $(this).addClass("trending-info__link_active");
+  });
+});
