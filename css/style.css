@@ -524,7 +524,7 @@ template {
 }
 
 .hero-info__sign {
-  font-family: HK Grotesk;
+  font-family: HK Grotesk, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -764,6 +764,7 @@ template {
 
 .trending__card {
   min-height: 490px;
+  cursor: pointer;
 }
 
 .trending__card_s {
@@ -1107,11 +1108,20 @@ template {
 }
 
 .slick-prev {
-  background-image: url("../img/Button-right.png");
+  background-image: url("../img/Button-left.png");
   position: absolute;
   z-index: 10;
   top: 76%;
   left: 6%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.slick-prev:hover {
+  content: "";
+  background-image: url("../img/Button-right.png");
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .slick-next {
@@ -1120,6 +1130,18 @@ template {
   z-index: 10;
   top: 76%;
   left: 0%;
+}
+
+.slick-next:hover {
+  content: "";
+  background-image: url("../img/Button-right.png");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.stories-slider__item:focus {
+  outline: 0px !important;
+  border: 0px !important;
 }
 
 .newsletter {
@@ -1393,7 +1415,7 @@ template {
   bottom: 20%;
   right: 10%;
   cursor: pointer;
-  z-index: 200;
+  z-index: 199;
 }
 
 .footer__image {
@@ -1858,6 +1880,10 @@ template {
     width: 100%;
     top: 70px;
   }
+  label {
+    bottom: 0px;
+    left: 5%;
+  }
   .form {
     width: 92%;
   }
@@ -2146,10 +2172,10 @@ template {
     width: 56px;
   }
   .slick-next {
-    top: 21%;
+    top: 33%;
   }
   .slick-prev {
-    top: 21%;
+    top: 33%;
     left: 51%;
   }
   .newsletter {
@@ -2159,6 +2185,7 @@ template {
   .newsletter-form__button {
     top: 60px;
     width: 98%;
+    right: auto;
   }
   .newsletter-form__input {
     min-height: 50px;
@@ -2183,6 +2210,11 @@ template {
     font-size: 16px;
     line-height: 28px;
     word-spacing: 2px;
+  }
+  label {
+    bottom: 6px;
+    left: 5%;
+    font-size: 13px;
   }
   .footer {
     padding-top: 46px;
@@ -2233,6 +2265,21 @@ template {
   .modal__form {
     margin: auto;
     width: 90%;
+  }
+}
+
+@media (max-width: 539px) {
+  .slick-next {
+    top: 21%;
+  }
+  .slick-prev {
+    top: 21%;
+  }
+}
+
+@media (max-width: 330px) {
+  label {
+    left: 1%;
   }
 }
 

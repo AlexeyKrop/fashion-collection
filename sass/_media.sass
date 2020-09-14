@@ -275,6 +275,9 @@
       &__button
         width: 100%
         top: 70px
+  label
+    bottom: 0px
+    left: 5%      
   .form
     width: 92%
   .footer
@@ -319,8 +322,7 @@
         margin-bottom: 0px
       &__label
         padding: 2px 26px
-        margin-bottom: 0px
-        
+        margin-bottom: 0px       
       &__text
         width: 280px
         font-size: 16px
@@ -476,9 +478,9 @@
     &-arrow
       width: 56px
     &-next
-      top: 21%
+      top: 33%
     &-prev
-      top: 21%
+      top: 33%
       left: 51%
   .newsletter
     padding-top: 45px
@@ -487,6 +489,7 @@
       &__button
         top: 60px
         width: 98%
+        right: auto
       &__input
         min-height: 50px
         width: 98%
@@ -507,6 +510,10 @@
         font-size: 16px
         line-height: 28px
         word-spacing: 2px
+  label
+    bottom: 6px
+    left: 5%
+    font-size: 13px            
   .footer
     padding-top: 46px
     &-information
@@ -543,7 +550,16 @@
         padding: 0px
     &__form
       margin: auto
-      width: 90%        
+      width: 90%
+@media (max-width: 539px)
+  .slick     
+    &-next
+      top: 21%
+    &-prev
+      top: 21% 
+@media (max-width: 330px)
+  label
+    left: 1%                    
 @media (max-width: 320px)
   .hero
     &-info

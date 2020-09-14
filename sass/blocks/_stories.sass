@@ -96,17 +96,28 @@
   background-color: transparent
 .slick
   &-prev
-    background-image: url('../img/Button-right.png')
+    background-image: url('../img/Button-left.png')
     position: absolute
     z-index: 10
     top: 76%
     left: 6%
+    transform: rotate(180deg)
+    &:hover
+      content: ""
+      background-image: url('../img/Button-right.png')
+      transform: rotate(0deg)
   &-next
     background-image: url('../img/Button-left.png')
     position: absolute
     z-index: 10
     top: 76%
     left: 0%
-  
+    &:hover
+      content: ""
+      background-image: url('../img/Button-right.png')
+      transform: rotate(180deg)
+.stories-slider__item:focus 
+  outline: 0px !important
+  border: 0px !important
 
 
